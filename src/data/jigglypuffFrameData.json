@@ -1,0 +1,88 @@
+{
+    "GroundAttacks": [
+        {
+            "name": "Jab 1",
+            "startupFrames": 5,
+            "activeFrames": [5, 6],
+            "totalFrames": 17,
+            "IASA": 16,
+            "shieldStun": 3,
+            "baseDamage": 3.0
+        },
+        {
+            "name": "Jab 2",
+            "startupFrames": 5,
+            "activeFrames": [5, 6],
+            "totalFrames": 19,
+            "IASA": 16,
+            "shieldStun": 3,
+            "baseDamage": 3.0
+        },
+        {
+            "name": "Forward Tilt",
+            "startupFrames": 6,
+            "activeFrames": [6, 9],
+            "totalFrames": 27,
+            "shieldStun": 6,
+            "baseDamage": 10.0
+        },
+        {
+            "name": "Up Tilt",
+            "startupFrames": 8,
+            "activeFrames": [8, 14],
+            "totalFrames": 23,
+            "shieldStun": 6,
+            "baseDamage": 9.0,
+            "baseDamageWeak": 8.0,
+            "notes": "Weaker hitbox on frames 10-14"
+        },
+        {
+            "name": "Down Tilt",
+            "startupFrames": 10,
+            "activeFrames": [10, 12],
+            "totalFrames": 39,
+            "shieldStun": 6,
+            "baseDamage": 10.0
+        },
+        {
+            "name": "Dash Attack",
+            "startupFrames": 4,
+            "activeFrames": [4, 14],
+            "totalFrames": 39,
+            "IASA": 39,
+            "shieldStun": 7,
+            "baseDamage": 12.0,
+            "baseDamageWeak": 8.0,
+            "notes": "Weaker hitbox on frames 9-14"
+        },
+        {
+            "name": "Forward Smash",
+            "startupFrames": 12,
+            "activeFrames": [12, 20],
+            "totalFrames": 44,
+            "shieldStun": 9,
+            "baseDamage": 17.0,
+            "baseDamageWeak": 13.0,
+            "notes": "Weaker hitbox on frames 16-20"
+        },
+        {
+            "name": "Up Smash",
+            "startupFrames": 7,
+            "activeFrames": [7, 10],
+            "totalFrames": 54,
+            "IASA": 45,
+            "shieldStun": 8,
+            "baseDamage": 15.0,
+            "baseDamageWeak": 14.0
+        },
+        {
+            "name": "Down Smash",
+            "startupFrames": 9,
+            "activeFrames": [9, 10],
+            "totalFrames": 54,
+            "IASA": 48,
+            "shieldStun": 7,
+            "baseDamage": 12.0
+        }
+    ]
+}
