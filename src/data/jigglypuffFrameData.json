@@ -84,5 +84,70 @@
             "shieldStun": 7,
             "baseDamage": 12.0
         }
+    ],
+    "AerialAttacks": [
+        {
+            "name": "Neutral Air",
+            "startupFrames": 6,
+            "activeFrames": [6, 28],
+            "totalFrames": 49,
+            "shieldStun": 7,
+            "baseDamage": 12.0,
+            "baseDamageWeak": 9.0,
+            "LandingLag": 20,
+            "LCancelLag": 10,
+            "AutoCancel": "Won't Auto Cancel Frames 6-28",
+            "notes": "Weaker hitbox on frames 8-28"
+        },
+        {
+            "name": "Forward Air",
+            "startupFrames": 7,
+            "activeFrames": [7, 22],
+            "totalFrames": 39,
+            "IASA": 35,
+            "shieldStun": 7,
+            "baseDamage": 12.0,
+            "baseDamageWeak": 7.0,
+            "LandingLag": 20,
+            "LCancelLag": 10,
+            "AutoCancel": "Won't Auto Cancel Frames 7-33",
+            "notes": "Weaker hitbox on frames 9-22, strong hit may do 10% depending on hitbox"
+        },
+        {
+            "name": "Back Air",
+            "startupFrames": 9,
+            "activeFrames": [9, 12],
+            "totalFrames": 39,
+            "IASA": 31,
+            "shieldStun": 7,
+            "baseDamage": 12.0,
+            "LandingLag": 20,
+            "LCancelLag": 10,
+            "AutoCancel": "Won't Auto Cancel Frames 9-24"
+        },
+        {
+            "name": "Up Air",
+            "startupFrames": 9,
+            "activeFrames": [9, 12],
+            "totalFrames": 39,
+            "IASA": 38,
+            "shieldStun": 7,
+            "baseDamage": 12.0,
+            "LandingLag": 20,
+            "LCancelLag": 10,
+            "AutoCancel": "Won't Auto Cancel Frame 9-36"
+        },
+        {
+            "name": "Down Air",
+            "startupFrames": 5,
+            "activeFrames": [5, 30],
+            "totalFrames": 49,
+            "shieldStun": 2,
+            "baseDamage": 2.0,
+            "LandingLag": 30,
+            "LCancelLag": 15,
+            "AutoCancel": "Won't Auto Cancel Frames 5-41",
+            "notes": "The Hitboxes occur on frames 5-6, 8-9, 11-12, 14-15, 17-18, 20-21, 23-24, 26-27, 29-30"
+        }
     ]
 }
