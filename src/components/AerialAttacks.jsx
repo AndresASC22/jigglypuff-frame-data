@@ -1,4 +1,3 @@
-// src/components/AerialAttacks.jsx
 import React from "react";
 import moveData from "../data/jigglypuffFrameData.json";
 import CategorySection from "./CategorySection";

@@ -12,6 +12,9 @@ export default function MoveCard({ move }) {
         <li><strong>Shield Stun:</strong> {move.shieldStun}</li>
         <li><strong>Base Damage:</strong> {move.baseDamage}%</li>
         {move.baseDamageWeak && <li><strong>Weak Hit:</strong> {move.baseDamageWeak}%</li>}
+        {move.LandingLag && <li><strong>Landing Lag:</strong> {move.LandingLag}f</li>}
+        {move.LCancelLag && <li><strong>L-Cancel Lag:</strong> {move.LCancelLag}f</li>}
+        {move.AutoCancel && <li><strong>Auto Cancel:</strong> {move.AutoCancel}</li>}
         {move.notes && <li><em>{move.notes}</em></li>}
       </ul>
     </div>
