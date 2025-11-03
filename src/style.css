@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f9;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.move-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.move-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.move-card:hover {
+  transform: scale(1.02);
+}
+
+.move-card h3 {
+  margin: 0 0 10px 0;
+  color: #d76da1; /* Puff pink 💖 */
+}
