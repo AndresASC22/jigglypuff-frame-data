@@ -4,13 +4,22 @@ export default function MoveCard({ move }) {
   return (
     <div className="move-card">
       <h3>{move.name}</h3>
+
+      {move.gif && (
+        <div className="gif-container">
+          <img src={move.gif} alt={`${move.name} animation`} />
+        </div>
+      )}
+
       <ul>
         <li><strong>Startup:</strong> {move.startupFrames}f</li>
-        <li><strong>Active:</strong> {move.activeFrames[0]}–{move.activeFrames[1]}f</li>
+        <li>
+          <strong>Active:</strong> {move.activeFrames[0]}–{move.activeFrames[1]}f
+        </li>
         <li><strong>Total Frames:</strong> {move.totalFrames}</li>
         {move.IASA && <li><strong>IASA:</strong> {move.IASA}</li>}
-        <li><strong>Shield Stun:</strong> {move.shieldStun}</li>
-        <li><strong>Base Damage:</strong> {move.baseDamage}%</li>
+        {move.shieldStun && <li><strong>Shield Stun:</strong> {move.shieldStun}</li>}
+        {move.baseDamage && <li><strong>Base Damage:</strong> {move.baseDamage}%</li>}
         {move.baseDamageWeak && <li><strong>Weak Hit:</strong> {move.baseDamageWeak}%</li>}
         {move.LandingLag && <li><strong>Landing Lag:</strong> {move.LandingLag}f</li>}
         {move.LCancelLag && <li><strong>L-Cancel Lag:</strong> {move.LCancelLag}f</li>}

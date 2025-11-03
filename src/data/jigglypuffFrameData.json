@@ -7,7 +7,8 @@
             "totalFrames": 17,
             "IASA": 16,
             "shieldStun": 3,
-            "baseDamage": 3.0
+            "baseDamage": 3.0,
+            "gif": "/gifs/GroundAttacks/PuffJab1.gif"
         },
         {
             "name": "Jab 2",
@@ -16,7 +17,8 @@
             "totalFrames": 19,
             "IASA": 16,
             "shieldStun": 3,
-            "baseDamage": 3.0
+            "baseDamage": 3.0,
+            "gif": "/gifs/GroundAttacks/PuffJab2.gif"
         },
         {
             "name": "Forward Tilt",
@@ -24,7 +26,8 @@
             "activeFrames": [6, 9],
             "totalFrames": 27,
             "shieldStun": 6,
-            "baseDamage": 10.0
+            "baseDamage": 10.0,
+            "gif": "/gifs/GroundAttacks/PuffForwardTilt.gif"
         },
         {
             "name": "Up Tilt",
@@ -34,7 +37,8 @@
             "shieldStun": 6,
             "baseDamage": 9.0,
             "baseDamageWeak": 8.0,
-            "notes": "Weaker hitbox on frames 10-14"
+            "notes": "Weaker hitbox on frames 10-14",
+            "gif": "/gifs/GroundAttacks/PuffUpTilt.gif"
         },
         {
             "name": "Down Tilt",
@@ -42,7 +46,8 @@
             "activeFrames": [10, 12],
             "totalFrames": 39,
             "shieldStun": 6,
-            "baseDamage": 10.0
+            "baseDamage": 10.0,
+            "gif": "/gifs/GroundAttacks/PuffDownTilt.gif"
         },
         {
             "name": "Dash Attack",
@@ -53,7 +58,8 @@
             "shieldStun": 7,
             "baseDamage": 12.0,
             "baseDamageWeak": 8.0,
-            "notes": "Weaker hitbox on frames 9-14"
+            "notes": "Weaker hitbox on frames 9-14",
+            "gif": "/gifs/GroundAttacks/PuffDashAttack.gif"
         },
         {
             "name": "Forward Smash",
@@ -63,7 +69,8 @@
             "shieldStun": 9,
             "baseDamage": 17.0,
             "baseDamageWeak": 13.0,
-            "notes": "Weaker hitbox on frames 16-20"
+            "notes": "Weaker hitbox on frames 16-20",
+            "gif": "/gifs/GroundAttacks/PuffForwardSmash.gif"
         },
         {
             "name": "Up Smash",
@@ -73,7 +80,8 @@
             "IASA": 45,
             "shieldStun": 8,
             "baseDamage": 15.0,
-            "baseDamageWeak": 14.0
+            "baseDamageWeak": 14.0,
+            "gif": "/gifs/GroundAttacks/PuffUpSmash.gif"
         },
         {
             "name": "Down Smash",
@@ -82,7 +90,8 @@
             "totalFrames": 54,
             "IASA": 48,
             "shieldStun": 7,
-            "baseDamage": 12.0
+            "baseDamage": 12.0,
+            "gif": "/gifs/GroundAttacks/PuffDownSmash.gif"
         }
     ],
     "AerialAttacks": [
@@ -97,7 +106,8 @@
             "LandingLag": 20,
             "LCancelLag": 10,
             "AutoCancel": "Won't Auto Cancel Frames 6-28",
-            "notes": "Weaker hitbox on frames 8-28"
+            "notes": "Weaker hitbox on frames 8-28",
+            "gif": "/gifs/Aerials/PuffNair.gif"
         },
         {
             "name": "Forward Air",
@@ -111,7 +121,8 @@
             "LandingLag": 20,
             "LCancelLag": 10,
             "AutoCancel": "Won't Auto Cancel Frames 7-33",
-            "notes": "Weaker hitbox on frames 9-22, strong hit may do 10% depending on hitbox"
+            "notes": "Weaker hitbox on frames 9-22, strong hit may do 10% depending on hitbox",
+            "gif": "/gifs/Aerials/PuffFair.gif"
         },
         {
             "name": "Back Air",
@@ -123,7 +134,8 @@
             "baseDamage": 12.0,
             "LandingLag": 20,
             "LCancelLag": 10,
-            "AutoCancel": "Won't Auto Cancel Frames 9-24"
+            "AutoCancel": "Won't Auto Cancel Frames 9-24",
+            "gif": "/gifs/Aerials/PuffBair.gif"
         },
         {
             "name": "Up Air",
@@ -135,7 +147,8 @@
             "baseDamage": 12.0,
             "LandingLag": 20,
             "LCancelLag": 10,
-            "AutoCancel": "Won't Auto Cancel Frame 9-36"
+            "AutoCancel": "Won't Auto Cancel Frame 9-36",
+            "gif": "/gifs/Aerials/PuffUair.gif"
         },
         {
             "name": "Down Air",
@@ -147,7 +160,8 @@
             "LandingLag": 30,
             "LCancelLag": 15,
             "AutoCancel": "Won't Auto Cancel Frames 5-41",
-            "notes": "The Hitboxes occur on frames 5-6, 8-9, 11-12, 14-15, 17-18, 20-21, 23-24, 26-27, 29-30"
+            "notes": "The Hitboxes occur on frames 5-6, 8-9, 11-12, 14-15, 17-18, 20-21, 23-24, 26-27, 29-30",
+            "gif": "/gifs/Aerials/PuffDair.gif"
         }
     ]
 }
