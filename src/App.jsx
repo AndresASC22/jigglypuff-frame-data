@@ -2,6 +2,7 @@ import React from "react";
 import GroundAttacks from "./components/GroundAttacks";
 import AerialAttacks from "./components/AerialAttacks";
 import SpecialAttacks from "./components/SpecialAttacks";
+import Grabs from "./components/Grabs";
 
 import "./style.css";
 
@@ -12,6 +13,7 @@ export default function App() {
       <GroundAttacks />
       <AerialAttacks />
       <SpecialAttacks />
+      <Grabs />
     </div>
   );
 }

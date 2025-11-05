@@ -203,5 +203,21 @@
             "notes": "Invulnerable on frames 1-26",
             "gif": "/gifs/Special/PuffDownB.gif"
         }
+    ],
+    "Grabs": [
+        {
+            "name": "Standing Grab",
+            "startupFrames": 7,
+            "activeFrames": [7, 8],
+            "totalFrames": 29,
+            "gif": "/gifs/Grab(s)/PuffStandingGrab.gif"
+        },
+        {
+            "name": "Dash Grab",
+            "startupFrames": 11,
+            "activeFrames": [11, 12],
+            "totalFrames": 39,
+            "gif": "/gifs/Grab(s)/PuffDashGrab.gif"
+        }
     ]
 }
