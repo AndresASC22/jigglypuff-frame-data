@@ -250,5 +250,37 @@
             "totalFrames": 41,
             "baseDamage": 11.0
         }
+    ],
+    "DodgesRolls": [
+        {
+            "name": "Spot Dodge",
+            "startupFrames": 2,
+            "activeFrames": [2, 15],
+            "totalFrames": 27,
+            "gif": "/gifs/Dodges-Rolls/PuffSpotDodge.gif"
+        },
+        {
+            "name": "Forward Roll",
+            "startupFrames": 2,
+            "activeFrames": [2, 18],
+            "totalFrames": 34,
+            "gif": "/gifs/Dodges-Rolls/PuffForwardRoll.gif"
+        },
+        {
+            "name": "Backward Roll",
+            "startupFrames": 4,
+            "activeFrames": [4, 19],
+            "totalFrames": 34,
+            "gif": "/gifs/Dodges-Rolls/PuffBackRoll.gif"
+        },
+        {
+            "name": "Air Dodge",
+            "startupFrames": 4,
+            "activeFrames": [4, 29],
+            "totalFrames": 49,
+            "gif": "/gifs/Dodges-Rolls/PuffAirDodge.gif",
+            "notes": "Landing Fall Special Lag: 10 frames"
+        }
+
     ]
 }

@@ -9,6 +9,9 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
+  background-color: #d76da1; 
+  color: white;
+  padding: 15px;
 }
 
 .move-list {
@@ -65,4 +68,29 @@ h1 {
   border: 2px dashed #f5c2e7;
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+.title-with-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  background-color: #d76da1;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.title-with-icons span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hbox-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
