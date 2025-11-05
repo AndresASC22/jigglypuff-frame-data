@@ -163,5 +163,45 @@
             "notes": "The Hitboxes occur on frames 5-6, 8-9, 11-12, 14-15, 17-18, 20-21, 23-24, 26-27, 29-30",
             "gif": "/gifs/Aerials/PuffDair.gif"
         }
+    ],
+    "SpecialAttacks": [
+        {
+            "name": "Rollout",
+            "startupFrames": "-",
+            "activeFrames": "-",
+            "totalFrames": "-",
+            "shieldStun": 6,
+            "baseDamage": 10.0,
+            "notes": "Charge time affects speed and damage",
+            "gif": "/gifs/Special/PuffNeutralB.gif"
+        },
+        {
+            "name": "Pound",
+            "startupFrames": 12,
+            "activeFrames": [12, 27],
+            "totalFrames": 45,
+            "shieldStun": 7,
+            "baseDamage": 13.0,
+            "notes": "Can be angled slightly up or down",
+            "gif": "/gifs/Special/PuffSideB.gif"
+        },
+        {
+            "name": "Sing",
+            "startupFrames": 28,
+            "activeFrames": [28, 125],
+            "totalFrames": 179,
+            "notes": "Active frames 28-35, 69-76, 111-123, puts opponents to sleep, only hits grounded opponents",
+            "gif": "/gifs/Special/PuffUpB.gif"
+        },
+        {
+            "name": "Rest",
+            "startupFrames": 1,
+            "activeFrames": [1, 1],
+            "totalFrames": 249,
+            "shieldStun": 14,
+            "baseDamage": 28.0,
+            "notes": "Invulnerable on frames 1-26",
+            "gif": "/gifs/Special/PuffDownB.gif"
+        }
     ]
 }
