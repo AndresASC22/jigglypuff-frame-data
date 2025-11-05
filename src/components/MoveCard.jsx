@@ -5,11 +5,13 @@ export default function MoveCard({ move }) {
     <div className="move-card">
       <h3>{move.name}</h3>
 
-      {move.gif && (
         <div className="gif-container">
-          <img src={move.gif} alt={`${move.name} animation`} />
+        {move.gif ? (
+          <img src={move.gif} alt={`${move.name} animation`} className="move-gif" />
+        ) : (
+          <div className="no-gif">No GIF available</div>
+        )}
         </div>
-      )}
 
       <ul>
         <li><strong>Startup:</strong> {move.startupFrames}f</li>

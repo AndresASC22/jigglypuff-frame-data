@@ -219,5 +219,36 @@
             "totalFrames": 39,
             "gif": "/gifs/Grab(s)/PuffDashGrab.gif"
         }
+    ],
+    "Throws": [
+        {
+            "name": "Forward Throw",
+            "startupFrames": 10,
+            "activeFrames": [10, 10],
+            "totalFrames": 35,
+            "baseDamage": 7.0
+        },
+        {
+            "name": "Back Throw",
+            "startupFrames": "-",
+            "activeFrames": "-",
+            "totalFrames": 49,
+            "baseDamage": 10.0
+        },
+        {
+            "name": "Down Throw",
+            "startupFrames": "-",
+            "activeFrames": [10, 75],
+            "totalFrames": 84,
+            "baseDamage": 8.0,
+            "notes": "5 hits each dealing 1% damage, then the final hit deals 3% damage"
+        },
+        {
+            "name": "Up Throw",
+            "startupFrames": "-",
+            "activeFrames": "-",
+            "totalFrames": 41,
+            "baseDamage": 11.0
+        }
     ]
 }
