@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GroundAttacks from "./components/GroundAttacks";
 import AerialAttacks from "./components/AerialAttacks";
 import SpecialAttacks from "./components/SpecialAttacks";
@@ -9,14 +9,33 @@ import DodgesRolls from "./components/DodgesRolls";
 import "./style.css";
 
 export default function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    // Load preference from localStorage if available
+    return localStorage.getItem("darkMode") === "true";
+  });
+
+  // Update <body> class whenever dark mode changes
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+
   return (
     <div className="App">
-      <h1 className="title-with-icons">
-        <img src="/public/hbox.jpeg" alt="hgod image" className="hbox-icon" />
-        <span>Jigglypuff Frame Data</span>
-        <img src="/public/hbox.jpeg" alt="hgod image" className="hbox-icon" />
-      </h1>
-  
+      <div className="header">
+        <h1 className="title-with-icons">
+          <img src="hbox.jpeg" alt="Hbox icon" className="hbox-icon" />
+          <span>Jigglypuff Frame Data</span>
+          <img src="hbox.jpeg" alt="Hbox icon" className="hbox-icon" />
+        </h1>
+        <button
+          className="dark-mode-toggle"
+          onClick={() => setDarkMode((prev) => !prev)}
+        >
+          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+        </button>
+      </div>
+
       <GroundAttacks />
       <AerialAttacks />
       <SpecialAttacks />

@@ -94,3 +94,65 @@ h1 {
   border-radius: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e6e6e6;
+}
+
+body.dark-mode h1 {
+  background-color: #9a4f75;
+}
+
+body.dark-mode .move-card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .move-card h3 {
+  color: #ffb3d9;
+}
+
+body.dark-mode .no-gif {
+  background-color: #2a2a2a;
+  border-color: #9a4f75;
+  color: #bbb;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #d76da1;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: #c45b8f;
+}
+
+.dark-mode-toggle {
+  background-color: #d76da1;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  margin: 10px auto;
+  display: block;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #c45b8f;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
