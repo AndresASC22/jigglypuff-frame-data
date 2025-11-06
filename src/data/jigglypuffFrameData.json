@@ -8,7 +8,26 @@
             "IASA": 16,
             "shieldStun": 3,
             "baseDamage": 3.0,
-            "gif": "/gifs/GroundAttacks/PuffJab1.gif"
+            "gif": "/gifs/GroundAttacks/PuffJab1.gif",
+            "frames": [
+                "/Frames/PuffJab1Frames/PuffJab1Frame1.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame2.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame3.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame4.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame5.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame6.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame7.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame8.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame9.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame10.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame11.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame12.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame13.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame14.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame15.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame16.gif",
+                "/Frames/PuffJab1Frames/PuffJab1Frame17.gif"
+            ]
         },
         {
             "name": "Jab 2",

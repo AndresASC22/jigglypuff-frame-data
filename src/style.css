@@ -42,6 +42,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .gif-container img,
@@ -155,4 +156,74 @@ body.dark-mode .dark-mode-toggle:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.frame-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.frame-viewer-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+}
+.frame-viewer-content .dark-mode {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #d76da1;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #c45b8f;
+}
+
+.frame-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #f5c2e7;
+  margin-bottom: 15px;
+}
+
+.frame-controls button {
+  margin: 0 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #d76da1;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.frame-controls button:hover {
+  background-color: #c45b8f;
+}
+
+h2{
+  color: #121212;
 }

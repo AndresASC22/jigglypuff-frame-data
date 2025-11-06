@@ -1,16 +1,22 @@
 import React from "react";
+import FrameViewer from "./FrameViewer";
 
 export default function MoveCard({ move }) {
+  const [showViewer, setShowViewer] = React.useState(false);
+
   return (
     <div className="move-card">
       <h3>{move.name}</h3>
 
-        <div className="gif-container">
-        {move.gif ? (
-          <img src={move.gif} alt={`${move.name} animation`} className="move-gif" />
-        ) : (
-          <div className="no-gif">No GIF available</div>
-        )}
+        <div className="gif-container" onClick={() => setShowViewer(true)}>
+          {move.gif ? (
+            <img src={move.gif} alt={`${move.name} animation`} className="move-gif" />
+          ) : (
+            <div className="no-gif">No GIF available</div>
+          )}
+          {showViewer && (
+            <FrameViewer move={move} onClose={() => setShowViewer(false)} />
+          )}
         </div>
 
       <ul>
