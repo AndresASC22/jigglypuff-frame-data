@@ -1,15 +1,19 @@
 import React from "react";
 import MoveCard from "./MoveCard";
 
-export default function CategorySection({ title, moves }) {
+export default function CategorySection({ title, moves, onMoveClick }) {
   return (
-    <section className="category-section">
+    <div className="move-section">
       <h2>{title}</h2>
       <div className="move-list">
-        {moves.map((move, index) => (
-          <MoveCard key={index} move={move} />
+        {moves.map((move) => (
+          <MoveCard
+            key={move.name}
+            move={move}
+            onMoveClick={onMoveClick}
+          />
         ))}
       </div>
-    </section>
+    </div>
   );
 }

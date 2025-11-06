@@ -37,7 +37,28 @@
             "IASA": 16,
             "shieldStun": 3,
             "baseDamage": 3.0,
-            "gif": "/gifs/GroundAttacks/PuffJab2.gif"
+            "gif": "/gifs/GroundAttacks/PuffJab2.gif",
+            "frames": [
+                "/Frames/PuffJab2Frames/PuffJab2Frame1.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame2.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame3.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame4.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame5.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame6.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame7.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame8.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame9.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame10.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame11.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame12.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame13.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame14.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame15.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame16.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame17.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame18.gif",
+                "/Frames/PuffJab2Frames/PuffJab2Frame19.gif"
+            ]
         },
         {
             "name": "Forward Tilt",

@@ -5,20 +5,26 @@ import SpecialAttacks from "./components/SpecialAttacks";
 import Grabs from "./components/Grabs";
 import Throws from "./components/Throws";
 import DodgesRolls from "./components/DodgesRolls";
+import FrameViewer from "./components/FrameViewer";
 
 import "./style.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {
-    // Load preference from localStorage if available
     return localStorage.getItem("darkMode") === "true";
   });
 
-  // Update <body> class whenever dark mode changes
+  const [activeMove, setActiveMove] = useState(null); // Move currently viewed in FrameViewer
+
+
   useEffect(() => {
     document.body.classList.toggle("dark-mode", darkMode);
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
+
+  const handleMoveClick = (move) => {
+    setActiveMove(move);
+  };
 
   return (
     <div className="App">
@@ -32,16 +38,20 @@ export default function App() {
           className="dark-mode-toggle"
           onClick={() => setDarkMode((prev) => !prev)}
         >
-          {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {darkMode ? "☀️ Light Mode" : "🌉 Dark Mode"}
         </button>
       </div>
 
-      <GroundAttacks />
-      <AerialAttacks />
-      <SpecialAttacks />
-      <Grabs />
-      <Throws />
-      <DodgesRolls />
+      <GroundAttacks onMoveClick={handleMoveClick} />
+      <AerialAttacks onMoveClick={handleMoveClick} />
+      <SpecialAttacks onMoveClick={handleMoveClick} />
+      <Grabs onMoveClick={handleMoveClick} />
+      <Throws onMoveClick={handleMoveClick} />
+      <DodgesRolls onMoveClick={handleMoveClick} />
+
+      {activeMove && (
+        <FrameViewer move={activeMove} onClose={() => setActiveMove(null)} />
+      )}
     </div>
   );
 }

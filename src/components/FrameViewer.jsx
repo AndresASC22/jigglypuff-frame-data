@@ -1,14 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FrameViewer.css";
 
 export default function FrameViewer({ move, onClose }) {
   const [currentFrame, setCurrentFrame] = useState(0);
 
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
   if (!move.frames || move.frames.length === 0) {
     return (
       <div className="frame-viewer-overlay" onClick={onClose}>
-        <div className="frame-viewer-content" onClick={(e) => e.stopPropagation()}>
-          <button className="close-button" onClick={onClose}>✖</button>
+        <div
+          className="frame-viewer-content"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button className="close-button" onClick={onClose}>
+            ✖
+          </button>
           <p>No frame data available for this move.</p>
         </div>
       </div>
@@ -31,9 +51,14 @@ export default function FrameViewer({ move, onClose }) {
         className="frame-viewer-content"
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="close-button" onClick={onClose}>✖</button>
+        <button className="close-button" onClick={onClose}>
+          ✖
+        </button>
 
-        <h2 className="frame-title">{move.name} — Frame {currentFrame + 1}</h2>
+        <h2 className="frame-title">
+          {move.name} — Frame {currentFrame + 1}/{move.frames.length}
+        </h2>
+
         <img
           src={move.frames[currentFrame]}
           alt={`Frame ${currentFrame + 1} of ${move.name}`}
