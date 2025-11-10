@@ -22,6 +22,7 @@ export default function MoveCard({ move, onMoveClick }) {
         </li>
         <li><strong>Total Frames:</strong> {move.totalFrames}</li>
         {move.IASA && <li><strong>IASA:</strong> {move.IASA}</li>}
+        {move.AutoCancel && <li><strong>Auto Cancel:</strong> {move.AutoCancel}</li>}
         {move.shieldStun && <li><strong>Shield Stun:</strong> {move.shieldStun}</li>}
         {move.baseDamage && <li><strong>Base Damage:</strong> {move.baseDamage}%</li>}
         {move.notes && <li><em>{move.notes}</em></li>}
