@@ -41,7 +41,9 @@ export default function App() {
           {darkMode ? "☀️ Light Mode" : "🌉 Dark Mode"}
         </button>
       </div>
-
+      <div className="note">
+        NOTE:You can click on the image to go frame by frame (if GIFS are available).
+      </div>
       <GroundAttacks onMoveClick={handleMoveClick} />
       <AerialAttacks onMoveClick={handleMoveClick} />
       <SpecialAttacks onMoveClick={handleMoveClick} />
