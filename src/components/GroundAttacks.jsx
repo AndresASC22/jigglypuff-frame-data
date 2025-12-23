@@ -1,12 +1,11 @@
 import React from "react";
-import moveData from "../data/jigglypuffFrameData.json";
 import CategorySection from "./CategorySection";
 
-export default function GroundAttacks({ onMoveClick }) {
+export default function GroundAttacks({ data, onMoveClick }) {
   return (
     <CategorySection
       title="Ground Attacks"
-      moves={moveData.GroundAttacks}
+      moves={data?.GroundAttacks || []}
       onMoveClick={onMoveClick}
     />
   );

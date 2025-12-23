@@ -1,0 +1,266 @@
+{
+    "GroundAttacks": [
+        {
+            "name": "Jab 1",
+            "startupFrames": 4,
+            "activeFrames": [4, 7],
+            "totalFrames": 27,
+            "IASA": 26,
+            "shieldStun": 4,
+            "baseDamage": "6.0 / 4.0 %",
+            "gif": "/MarthData/gifs/groundattacks/MarthJab1.gif",
+            "frames": []
+        },
+        {
+            "name": "Jab 2",
+            "startupFrames": 4,
+            "activeFrames": [4, 8],
+            "totalFrames": 27,
+            "IASA": 26,
+            "shieldStun": 4,
+            "baseDamage": "6.0 / 4.0 %",
+            "gif": "/MarthData/gifs/groundattacks/MarthJab2.gif"
+        },
+        {
+            "name": "Forward Tilt",
+            "startupFrames": 7,
+            "activeFrames": [7, 10],
+            "totalFrames": 35,
+            "shieldStun": 7,
+            "baseDamage": "13.0 / 9.0 %",
+            "gif": "/MarthData/gifs/groundattacks/MarthForwardTilt.gif"
+        },
+        {
+            "name": "Up Tilt",
+            "startupFrames": 6,
+            "activeFrames": [6, 12],
+            "totalFrames": 39,
+            "IASA": 32,
+            "shieldStun": 6,
+            "baseDamage": "13.0 / 9.0 %",
+            "notes": "Can do between 9% and 13%",
+            "gif": "/MarthData/gifs/groundattacks/MarthUpTilt.gif"
+        },
+        {
+            "name": "Down Tilt",
+            "startupFrames": 7,
+            "activeFrames": 49,
+            "IASA": 20,
+            "shieldStun": 6,
+            "baseDamage": "10.0 / 8.0 %",
+            "gif": "/MarthData/gifs/groundattacks/MarthDownTilt.gif"
+        },
+        {
+            "name": "Dash Attack",
+            "startupFrames": 12,
+            "activeFrames": [12, 15],
+            "totalFrames": 49,
+            "IASA": 40,
+            "shieldStun": 7,
+            "baseDamage": "12.0 / 9.0 %",
+            "notes": "can also do 11% damage",
+            "gif": "/MarthData/gifs/groundattacks/MarthDashAttack.gif"
+        },
+        {
+            "name": "Forward Smash",
+            "startupFrames": 10,
+            "activeFrames": [10, 13],
+            "totalFrames": 49,
+            "IASA": 48,
+            "shieldStun": 10,
+            "baseDamage": "20.0 / 14.0 %",
+            "gif": "/MarthData/gifs/groundattacks/MarthForwardSmash.gif"
+        },
+        {
+            "name": "Up Smash",
+            "startupFrames": 13,
+            "activeFrames": [13, 16],
+            "totalFrames": 54,
+            "IASA": 46,
+            "shieldStun": 10,
+            "baseDamage": "18.0 / 8.0%",
+            "notes": "Also does 15%, weak hit has half the shield stun",
+            "gif": "/MarthData/gifs/groundattacks/MarthUpSmash.gif"
+        },
+        {
+            "name": "Down Smash",
+            "startupFrames": 5,
+            "activeFrames": [5, 22],
+            "totalFrames": 64,
+            "IASA": 62,
+            "shieldStun": 9,
+            "baseDamage": "16.0 / 11.0%",
+            "notes": "Active frames 5-7, 20-22, weak hit has 6 frames shieldstun",
+            "gif": "/MarthData/gifs/groundattacks/MarthDownSmash.gif"
+        }
+    ],
+    "AerialAttacks": [
+        {
+            "name": "Neutral Air",
+            "startupFrames": 6,
+            "activeFrames": [6, 21],
+            "totalFrames": 49,
+            "shieldStun": 6,
+            "baseDamage": "10 / 4%",
+            "LandingLag": 15,
+            "LCancelLag": 7,
+            "AutoCancel": "Won't Auto Cancel Frames 6-24",
+            "notes": "Active frame 6-7, 15-21, weakhit has half the shieldstun",
+            "gif": "/MarthData/gifs/aerialattacks/MarthNair.gif"
+        },
+        {
+            "name": "Forward Air",
+            "startupFrames": 4,
+            "activeFrames": [4, 7],
+            "totalFrames": 33,
+            "IASA": 30,
+            "shieldStun": 7,
+            "baseDamage": "13.0 / 9.0%",
+            "LandingLag": 15,
+            "LCancelLag": 7,
+            "AutoCancel": "Won't Auto Cancel Frames 1-26",
+            "notes": "Also does 10%",
+            "gif": "/MarthData/gifs/aerialattacks/MarthFair.gif"
+        },
+        {
+            "name": "Back Air",
+            "startupFrames": 7,
+            "activeFrames": [7 ,11],
+            "totalFrames": 39,
+            "IASA": 35,
+            "shieldStun": 6,
+            "baseDamage": "10.0 / 9.0%",
+            "LandingLag": 24,
+            "LCancelLag": 12,
+            "AutoCancel": "Won't Auto Cancel Frames 1-31",
+            "gif": "/MarthData/gifs/aerialattacks/MarthBair.gif"
+        },
+        {
+            "name": "Up Air",
+            "startupFrames": 5,
+            "activeFrames": [5, 8],
+            "totalFrames": 45,
+            "shieldStun": 7,
+            "baseDamage": "13.0 / 9.0 %",
+            "LandingLag": 15,
+            "LCancelLag": 7,
+            "AutoCancel": "Won't Auto Cancel Frames 5-26",
+            "notes": "Also does 10%",
+            "gif": "/MarthData/gifs/aerialattacks/MarthUair.gif"
+        },
+        {
+            "name": "Down Air",
+            "startupFrames": 6,
+            "activeFrames": [6, 9],
+            "totalFrames": 59,
+            "shieldStun": 7,
+            "baseDamage": "13.0 / 9.0 %",
+            "LandingLag": 32,
+            "LCancelLag": 16,
+            "AutoCancel": "Won't Auto Cancel Frames 6-47",
+            "notes": "Can also do 10%, this move is the devil",
+            "gif": "/MarthData/gifs/aerialattacks/MarthDair.gif"
+        }
+    ],
+    "SpecialAttacks": [
+        {
+            "name": "Shield Breaker",
+            "startupFrames": 16,
+            "activeFrames": [16, 20],
+            "totalFrames": 29,
+            "shieldStun": 5,
+            "baseDamage": 7,
+            "notes": "Minimum charge time 11 frames, maximum 121. Hitbox active frames 5-10 after releasing charge",
+            "gif": "/MarthData/gifs/specialattacks/MarthNeutralB.gif"
+        },
+        {
+            "name": "Dancing Blade",
+            "startupFrames": "-",
+            "activeFrames": "-",
+            "totalFrames": "-",
+            "shieldStun": "-",
+            "baseDamage": "-",
+            "gif": "/MarthData/gifs/specialattacks/MarthSideB.gif"
+        },
+        {
+            "name": "Dolphin Slash",
+            "startupFrames": 5,
+            "activeFrames": [5, 11],
+            "totalFrames": 39,
+            "shieldStun": 7,
+            "baseDamage": "13 / 6%",
+            "LandingLag": 34,
+            "notes": "strong hit frame 5, can do 10 or 13% damage. weak hit frames 6-11, does 7 or 6% damage",
+            "gif": "/MarthData/gifs/specialattacks/MarthUpB.gif"
+        },
+        {
+            "name": "Counter",
+            "startupFrames": 5,
+            "activeFrames": [5, 29],
+            "shieldStun": 5,
+            "baseDamage": 7,
+            "notes": "when counter activates, hitbox active frames 14-20 (delayed by 1 frame if stronger move)",
+            "gif": "/MarthData/gifs/specialattacks/MarthDownB.gif"
+        }
+    ],
+    "Grabs": [
+        {
+            "name": "Standing Grab",
+            "startupFrames": 6,
+            "totalFrames": 29,
+            "notes": "LMAO",
+            "gif": "/MarthData/gifs/grabs/MarthGrab.gif"
+        },
+        {
+            "name": "Dash Grab",
+            "startupFrames": 6,
+            "totalFrames": 39,
+            "gif": "/MarthData/gifs/grabs/MarthDashGrab.gif"
+        }
+    ],
+    "Throws": [
+        {
+            "name": "Forward Throw"
+        },
+        {
+            "name": "Back Throw"
+        },
+        {
+            "name": "Down Throw"
+        },
+        {
+            "name": "Up Throw"
+        }
+    ],
+    "DodgesRolls": [
+        {
+            "name": "Spot Dodge",
+            "startupFrames": 2,
+            "activeFrames": [2, 18],
+            "totalFrames": 27,
+            "gif": "MarthData/gifs/dodges/MarthSpotDodge.gif"
+        },
+        {
+            "name": "Backward Roll",
+            "startupFrames": 4,
+            "activeFrames": [4, 23],
+            "totalFrames": 35,
+            "gif": "MarthData/gifs/dodges/MarthBackwardRoll.gif"
+        },
+        {
+            "name": "Forward Roll",
+            "startupFrames": 4,
+            "activeFrames": [4, 19],
+            "totalFrames": 35,
+            "gif": "MarthData/gifs/dodges/MarthForwardRoll.gif"
+        },
+        {
+            "name": "Air Dodge",
+            "startupFrames": 4,
+            "activeFrames": [4, 29],
+            "totalFrames": 49,
+            "LandingLag": 10,
+            "gif": "MarthData/gifs/dodges/MarthAirDodge.gif"
+        }
+    ]
+}

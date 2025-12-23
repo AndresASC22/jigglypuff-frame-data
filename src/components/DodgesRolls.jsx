@@ -1,12 +1,11 @@
 import React from "react";
-import moveData from "../data/jigglypuffFrameData.json";
 import CategorySection from "./CategorySection";
 
-export default function DodgesRolls({ onMoveClick }) {
+export default function DodgesRolls({ data, onMoveClick }) {
   return (
     <CategorySection
-      title="Dodges/Rolls"
-      moves={moveData.DodgesRolls}
+      title="Dodges / Rolls"
+      moves={data?.DodgesRolls || []}
       onMoveClick={onMoveClick}
     />
   );
